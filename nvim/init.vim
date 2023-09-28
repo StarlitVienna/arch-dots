@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'SirVer/ultisnips'
 Plug 'davidhalter/jedi-vim'
 Plug 'mattn/emmet-vim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
@@ -31,7 +32,6 @@ set tabstop=4 softtabstop=4 expandtab shiftwidth=4
 set foldmethod=syntax
 set foldlevel=99
 set fileformat=unix
-colorscheme nord
 
 nmap <F10> :w <bar> :bp<CR> 
 
@@ -42,6 +42,9 @@ let g:airline_theme='nord'
 if (has("termguicolors"))
 	set termguicolors
 endif
+
+
+colorscheme catppuccin
 
 " nerdcommenter
 
@@ -272,3 +275,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+

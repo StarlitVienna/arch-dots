@@ -1,2 +1,2 @@
 # arch-dots
-My archlinux dots :)
+arch dots
